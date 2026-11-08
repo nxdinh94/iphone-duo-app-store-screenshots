@@ -1,0 +1,4 @@
+interface:
+  display_name: "iPhone Duo App Store Screenshots"
+  short_description: "Create and verify iPhone Duo listing screenshots"
+  default_prompt: "Use $iphone-duo-app-store-screenshots to create App Store screenshots from my app’s iPhone Duo captures."
