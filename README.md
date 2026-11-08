@@ -96,7 +96,7 @@ Without usable captures or a runnable build, the agent should identify the missi
 
 1. **Choose targets.** Confirm the app build, locales, display, orientation, and intended story.
 2. **Capture real behavior.** Use demo accounts, check for personal data, and preserve source captures.
-3. **Compose each display.** Show a quick outer-display task and an inner-display task that benefits from the available space when supported by the app.
+3. **Compose each display.** Show a quick outer-display task and an inner-display task that benefits from the available space when supported by the app. Build the screen inside the Closed portrait device at 1398 × 2034 px, excluding its bezel, and scale the screen and frame together. Other states use the [screen sizing rules](skills/iphone-duo-app-store-screenshots/references/sources.md#screen-size-inside-device-artwork).
 4. **Export and inspect.** Match Apple’s current upload specifications, check the files themselves, and review the sequence at full size and thumbnail size.
 
 The detailed instructions live in [SKILL.md](skills/iphone-duo-app-store-screenshots/SKILL.md). The [source guide](skills/iphone-duo-app-store-screenshots/references/sources.md) includes upload dimensions, optional Figma canvas math, and composition references. Recheck [Apple’s screenshot specifications](https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications) before preparing final deliverables; the source guide is a maintained reference, not a live specification feed.
