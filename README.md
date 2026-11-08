@@ -22,19 +22,19 @@ This repository contains instructions and visual references. Your agent needs ac
 With Node.js and npm available, install through the [Skills CLI](https://github.com/vercel-labs/skills):
 
 ```bash
-npx skills add nxdinh94/iphone-duo-screenshot-skill --skill iphone-duo-app-store-screenshots
+npx skills add nxdinh94/iphone-duo-app-store-screenshots --skill iphone-duo-app-store-screenshots
 ```
 
 Install for your user rather than the current project:
 
 ```bash
-npx skills add nxdinh94/iphone-duo-screenshot-skill --skill iphone-duo-app-store-screenshots --global
+npx skills add nxdinh94/iphone-duo-app-store-screenshots --skill iphone-duo-app-store-screenshots --global
 ```
 
 Inspect the available skill without installing:
 
 ```bash
-npx skills add nxdinh94/iphone-duo-screenshot-skill --list
+npx skills add nxdinh94/iphone-duo-app-store-screenshots --list
 ```
 
 ### Manual installation
@@ -42,8 +42,8 @@ npx skills add nxdinh94/iphone-duo-screenshot-skill --list
 Clone the repository and copy the **entire skill folder**, including its references, into your agent’s skills directory. Run one of the installation options below. Check for an existing installation before copying so you do not overwrite local changes.
 
 ```bash
-git clone https://github.com/nxdinh94/iphone-duo-screenshot-skill.git
-cd iphone-duo-screenshot-skill
+git clone https://github.com/nxdinh94/iphone-duo-app-store-screenshots.git
+cd iphone-duo-app-store-screenshots
 
 # Codex: user-level installation
 mkdir -p ~/.codex/skills
@@ -52,7 +52,7 @@ cp -R skills/iphone-duo-app-store-screenshots ~/.codex/skills/
 # Claude Code: project-level installation, from your app repository
 # Use the absolute path to the clone you just created.
 # mkdir -p .claude/skills
-# cp -R /path/to/iphone-duo-screenshot-skill/skills/iphone-duo-app-store-screenshots .claude/skills/
+# cp -R /path/to/iphone-duo-app-store-screenshots/skills/iphone-duo-app-store-screenshots .claude/skills/
 ```
 
 Start a new agent session after installation. The entrypoint uses `SKILL.md` with YAML frontmatter; `agents/openai.yaml` supplies Codex display metadata and a suggested prompt.
@@ -123,7 +123,7 @@ Compare width and height with the current specification and confirm `hasAlpha: n
 ## Repository structure
 
 ```text
-iphone-duo-screenshot-skill/
+iphone-duo-app-store-screenshots/
 ├── README.md
 └── skills/
     └── iphone-duo-app-store-screenshots/
@@ -150,7 +150,7 @@ npx skills add . --list
 
 Confirm that `iphone-duo-app-store-screenshots` appears, every relative reference resolves, and both bundled images open. This checks packaging and discovery; validate generated screenshots separately with real captures and file inspection.
 
-Report corrections or missing workflows through [GitHub Issues](https://github.com/nxdinh94/iphone-duo-screenshot-skill/issues), including the source URL and the affected instruction. Do not attach credentials, private app data, or unredacted personal information.
+Report corrections or missing workflows through [GitHub Issues](https://github.com/nxdinh94/iphone-duo-app-store-screenshots/issues), including the source URL and the affected instruction. Do not attach credentials, private app data, or unredacted personal information.
 
 ## Sources and attribution
 
